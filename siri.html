@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin-top: -21px;
+            background: lightcoral;
+        }
+
+        .head-container {
+            width: 100%;
+            height: 50px;
+            background: yellow;
+            text-align: center;
+        }
+
+        .body-container {
+            margin-top: 20px;
+            height: 100%;
+
+        }
+
+        .navigation-container {
+            background: mediumaquamarine;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .row-flex-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            height: 100px;
+            width: 200px;
+            background: chartreuse;
+            text-align: center;
+        }
+
+        @media only screen and (min-width:600px)and (max-width:900px) {
+            .head-container {
+                background: lightgreen;
+            }
+
+            .box {
+                background: lightslategray;
+                margin-left: 10px;
+            }
+
+            .navigation-container {
+                background: magenta;
+            }
+        }
+
+        @media only screen and (max-width:600px) {
+            .head-container {
+                background: midnightblue;
+                color: white;
+            }
+
+            .box {
+                background: orange;
+                margin-top: 10px;
+            }
+
+            .navigation-container {
+                display: none;
+            }
+
+            .row-flex-container {
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-container">
+
+        <div class="head-container">
+            <h1>vbm info tech</h1>
+        </div>
+        <div class="navigation-container">
+            <a href="home.html">home</a>
+            <a href="services.html">sevices</a>
+            <a href="about.html">about</a>
+            <a href="users.html">users</a>
+
+        </div>
+        <div class="body-container">
+
+            <div class="row-flex-container">
+                <div class="box">
+                    <div>sireesha</div>
+                </div>
+                <div class="box">
+                    <div>aruna</div>
+                </div>
+                <div class="box">
+                    <div>raji</div>
+                </div>
+                <div class="box">
+                    <div>ramya</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
